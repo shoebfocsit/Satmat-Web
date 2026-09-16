@@ -1,0 +1,180 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-main: #F8FAFC;
+    --bg-dark: #FFFFFF;
+    --bg-darker: #F8FAFC;
+    --bg-card: #FFFFFF;
+    --bg-darkest: #E5E7EB;
+    --primary-green: #0EA5E9;
+    --gold: #0EA5E9;
+    --orange: #B3B3B3;
+    --white: #0F172A;
+    --light-bg: #F8FAFC;
+    --gray-text: #6B7280;
+    --border-gold: rgba(14, 165, 233, 0.2);
+    --border-white: rgba(0, 0, 0, 0.12);
+    --font-body: 'Outfit', system-ui, -apple-system, sans-serif;
+    --font-display: 'Space Grotesk', system-ui, sans-serif;
+    --font-auth: 'DM Sans', 'Inter', system-ui, -apple-system, sans-serif;
+    --font-auth-display: 'DM Sans', system-ui, sans-serif;
+  }
+
+  html {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: var(--bg-darker);
+    color: var(--white);
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    line-height: 1.6;
+    min-height: 100vh;
+    overflow-x: hidden;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    font-feature-settings: 'ss01' 1, 'liga' 1, 'calt' 1;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    line-height: 1.15;
+    text-wrap: balance;
+  }
+
+  /* Professional numeric display for matka jodi/panel */
+  .font-display {
+    font-family: var(--font-display);
+  }
+  .font-body {
+    font-family: var(--font-body);
+  }
+
+  /* Auth pages — distinct professional font, no decorative logos */
+  .auth-page {
+    font-family: var(--font-auth);
+    letter-spacing: -0.015em;
+  }
+  .auth-page h1,
+  .auth-page h2,
+  .auth-page h3 {
+    font-family: var(--font-auth-display);
+    letter-spacing: -0.03em;
+    font-weight: 700;
+  }
+  .auth-page input,
+  .auth-page button,
+  .auth-page label {
+    font-family: var(--font-auth);
+  }
+}
+
+/* Custom Utilities for SatMat mobile app */
+
+/* iPhone home-indicator / gesture-bar clearance for fixed bottom bars. */
+@utility pb-safe {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+/* Hide scrollbars on horizontal chip/ticker scrollers (still swipeable). */
+@utility no-scrollbar {
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.bg-satmat-main {
+  background-color: #F8FAFC;
+}
+
+.bg-satmat-dark {
+  background-color: #FFFFFF;
+}
+
+.bg-satmat-darker {
+  background-color: #F8FAFC;
+}
+
+.bg-satmat-card {
+  background-color: #FFFFFF;
+}
+
+.text-satmat-primary {
+  color: #0EA5E9;
+}
+
+.text-satmat-gold {
+  color: #0EA5E9;
+}
+
+.text-satmat-orange {
+  color: #B3B3B3;
+}
+
+.bg-satmat-primary {
+  background-color: #0EA5E9;
+}
+
+.bg-satmat-gold {
+  background-color: #0EA5E9;
+}
+
+.bg-satmat-orange {
+  background-color: #B3B3B3;
+}
+
+.border-satmat-gold {
+  border-color: #0EA5E9;
+}
+
+.border-satmat-green {
+  border-color: #0EA5E9;
+}
+
+/* Glassmorphism and Cards */
+.glass-card {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.glass-card-light {
+  background: rgba(248, 250, 252, 0.6);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Glowing buttons and accents */
+.glow-gold {
+  box-shadow: 0 0 15px rgba(14, 165, 233, 0.35);
+}
+
+.glow-white {
+  box-shadow: 0 0 15px rgba(14, 165, 233, 0.25);
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(248, 250, 252, 0.5);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(14, 165, 233, 0.4);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(14, 165, 233, 0.7);
+}

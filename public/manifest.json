@@ -1,0 +1,49 @@
+{
+  "id": "/",
+  "name": "SATMAT - Satta Matka Online",
+  "short_name": "SATMAT",
+  "description": "India's trusted Satta Matka gaming platform. Play Single Digit, Jodi, Panna, Sangam and more.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone"],
+  "orientation": "portrait",
+  "background_color": "#F8FAFC",
+  "theme_color": "#0EA5E9",
+  "categories": ["games", "entertainment"],
+  "lang": "en",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "Play Now",
+      "url": "/?shortcut=play",
+      "description": "Start playing markets"
+    },
+    {
+      "name": "Results",
+      "url": "/?shortcut=results",
+      "description": "View today's results"
+    }
+  ]
+}
