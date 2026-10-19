@@ -68,7 +68,7 @@ npm test
 ## Deploy to Vercel
 
 1. Import the GitHub repo on [vercel.com](https://vercel.com)
-2. Set **Root Directory** to `web`
+2. Root Directory = `.` (dedicated `web` repo)
 3. Add environment variable:
-   - `API_BASE_URL` = `https://satmat-backendfinal.onrender.com` (PRIVATE — server-side only)
+   - `API_BASE_URL` = `https://api.satmat.cloud` (PRIVATE — server-side only)
 4. Deploy — Vercel auto-detects Next.js

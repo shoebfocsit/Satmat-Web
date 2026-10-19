@@ -2,8 +2,8 @@ import type { NextConfig } from 'next';
 
 const isDev = process.env.NODE_ENV === 'development';
 
-// Backend is the Render app the project is actually deployed against.
-const BACKEND_BASE = 'https://satmat-backendfinal.onrender.com';
+// Backend is the self-hosted API the project is actually deployed against.
+const BACKEND_BASE = 'https://api.satmat.cloud';
 
 // Backend origin is derived from the private API_BASE_URL (server-side only).
 // The browser never sees this URL — /api/v1/* requests are proxied to the

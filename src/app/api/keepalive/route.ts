@@ -8,7 +8,7 @@ export const dynamic = 'force-dynamic';
 export const runtime = 'nodejs';
 
 export async function GET() {
-  const backend = process.env.API_BASE_URL || 'https://satmat-backendfinal.onrender.com';
+  const backend = process.env.API_BASE_URL || 'https://api.satmat.cloud';
   const base = backend.replace(/\/$/, '');
   const url = `${base}/health`;
   const start = Date.now();
